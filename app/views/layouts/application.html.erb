@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  
+  <div class="navbar">
+    <ul class="header-menu">
+      <%= link_to '<li>Welcome</li>'.html_safe, 'welcome' %>
+      <%= link_to '<li>Portfolio</li>'.html_safe, 'portfolio' %>
+      <%= link_to '<li>Blog</li>'.html_safe, 'https://medium.com/about-codecademy' %>
+      <%= link_to '<li>About</li>'.html_safe, 'about' %>
+      <%= link_to '<li>Contact</li>'.html_safe, 'contact'%>
+      <li class="name">Matt Healy</li>
+    </ul>
+  </div>
+
+    <%= yield %>
+
+
+  <div class="footer">
+    <div class="contact">
+      <div class="social">
+         <%= link_to image_tag('https://i.imgur.com/YP5LCeL.png'), 'https://www.youtube.com'%>
+        <%= link_to image_tag('https://i.imgur.com/GB7r3Ii.png'), 'https://www.instagram.com'%>
+        <%= link_to image_tag('https://i.imgur.com/aQMCAKF.png'), 'https://www.twitter.com' %>
+        <%= link_to image_tag('https://i.imgur.com/njDiwlm.png'), 'https://www.github.com' %>
+      </div>
+    </br>
+    </br>
+    </br>
+    <p>©2018 Matt Healy</p>
+    </div>
+
+
+  </body>
+</html>
