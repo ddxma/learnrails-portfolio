@@ -1,2 +1,2 @@
-# learnrails-portfolio
-Portfolio app to feature codecademy projects
+# Portfolio
+Portfolio app as a showcase to feature codecademy projects
