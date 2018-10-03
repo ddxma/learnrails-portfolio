@@ -1,2 +1,2 @@
 # Portfolio
-Portfolio app as a showcase to feature codecademy projects
+Portfolio app to feature past projects
